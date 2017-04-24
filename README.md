@@ -1,5 +1,5 @@
 # govsc
-Tool for generate vscode go project
+Tool for generating vscode go project
 
 # Usage
 
