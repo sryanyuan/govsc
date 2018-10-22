@@ -1,7 +1,7 @@
 package main
 
 import (
-	"log"
+	"fmt"
 
 	"github.com/spf13/cobra"
 	"github.com/sryanyuan/govsc/command"
@@ -9,8 +9,8 @@ import (
 
 func main() {
 	var cmdEntry = &cobra.Command{Use: "govsc"}
-	cmdEntry.AddCommand(command.NewInitCommand())
+	cmdEntry.AddCommand(command.NewInit2Command())
 	if err := cmdEntry.Execute(); nil != err {
-		log.Println("Execute done with error:", err)
+		fmt.Println("Execute done with error:", err)
 	}
 }
